@@ -9,12 +9,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Beranda</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-secondary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="navbar.html">Iqbal Al'usfiansyah</a>
+        <a class="navbar-brand" href="navbar.html">Iqbal's Portofolio</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,43 +30,29 @@
         <div class="d-flex collapse navbar" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="navbar.html"
+              <a class="nav-link active" aria-current="page" href="#AboutMe"
                 >About Me</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#Skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#Projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="bmi.html">BMI Calculator</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Contact
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact Me</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <img src="img/imgawal.jpg" class="img-fluid" alt="..." />
-    <div class="container mt-5">
+    <div id="AboutMe" class="container mt-5">
       <h1 class="text-center">About Me</h1>
       <p class="container p-5 text-capitalize text-center">
         "I am someone who is always looking for creative ways to solve problems
@@ -80,49 +67,83 @@
         </div>
       </div>
     </div>
-    <div class="container mb-5">
+    <div id="Skills" class="container mb-5">
+      <h1 class="text-center mb-3">Skills</h1>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Success example"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div class="progress-bar bg-success" style="width: 25%">25%</div>
+      </div>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Info example"
+        aria-valuenow="50"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+      </div>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-label="Warning example"
+        aria-valuenow="75"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div class="progress-bar bg-warning text-dark" style="width: 75%">
+          75%
+        </div>
+      </div>
+    </div>
+    <div id="Projects" class="container mb-5">
       <h1 class="text-center mb-3">Project</h1>
       <div class="row">
-        <div class="card" style="width: 18rem">
-          <img src="img/html.jpg" class="card-img-top" alt="..." />
+        <div class="card animation" style="width: 18rem">
+          <img src="img/java.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
+            <h5 class="card-title">Java</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Bahasa pemrograman berorientasi objek yang platform-independen,
+              dirancang untuk "Write Once, Run Anywhere".
             </p>
-            <a href="#" class="btn btn-secondary">Go somewhere</a>
+            <a href="#" class="btn btn-secondary">Open</a>
           </div>
         </div>
         <div class="col"></div>
-        <div class="card" style="width: 18rem">
-          <img src="img/css.jpg" class="card-img-top" alt="..." />
+        <div class="card animation" style="width: 18rem">
+          <img src="img/Login Baru.png" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
+            <h5 class="card-title">E-logist</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Solusi cerdas untuk manajemen logistik yang cepat, efisien, dan
+              terintegrasi.
             </p>
-            <a href="#" class="btn btn-secondary">Go somewhere</a>
+            <a href="#" class="btn btn-secondary">Open</a>
           </div>
         </div>
         <div class="col"></div>
-        <div class="card" style="width: 18rem">
-          <img src="img/web.jpg" class="card-img-top" alt="..." />
+        <div class="card animation" style="width: 18rem">
+          <img src="img/backend.jpeg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-secondary">Go somewhere</a>
+            <h5 class="card-title">Back-end</h5>
+            <p class="card-text">Coming Soon</p>
+            <a href="#" class="btn btn-secondary">Open</a>
           </div>
         </div>
       </div>
     </div>
     <form class="mb-5 container">
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <label for="exampleFormControlInput1" class="form-label"
+          ><b>Name</b></label
+        >
         <input
           type="email"
           class="form-control"
@@ -132,7 +153,7 @@
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label"
-          >Email address</label
+          ><b>Email</b></label
         >
         <input
           type="email"
@@ -143,7 +164,7 @@
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label"
-          >Message</label
+          ><b>Message</b></label
         >
         <textarea
           class="form-control"
@@ -157,7 +178,7 @@
     <div class="bg-secondary-subtle p-3">
       <div class="row">
         <div class="col">
-          <h5 class="text-start">Contact Me :</h5>
+          <h5 id="Contact" class="text-start">Contact Me:</h5>
         </div>
         <div class="col">
           <a href="#" class="p-2">
